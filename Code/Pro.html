@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ranked. - Transparency is not an option.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Icone Aziende -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="my-top-nav" class="row navbar bg-body-tertiary p-2 m-0">
+        <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start align-items-center">
+            <a class="my-title navbar-brand fs-2 ranked-color" href="Home.html">Ranked.</a>
+        </div>
+        <div class="col-8 col-md-4 d-flex justify-content-start justify-content-md-center align-items-center">
+            <div class="input-group my-searchbar">
+                <button class="btn btn-outline-secondary" type="button" id="search-button"><i
+                        class="bi bi-search ranked-color"></i></button>
+                <input type="text" class="form-control" placeholder="Company, User, Anithing." aria-label="Search"
+                    aria-describedby="search-button">
+            </div>
+        </div>
+        <div class="col-4 col-md-4 d-flex justify-content-end justify-content-md-end align-items-center">
+            <a href="#"><i class="bi bi-bell ranked-color fs-4"></i></a>
+            <div class="mx-3">
+                <a href="#"><img src="img/ProfilePhoto1.png" class="my-profile-photo" alt="Profile Photo"></a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="my-trending-chart" class="container-fluid px-0">
+        <h2 class="visually-hidden">Trending companies</h2>
+
+        <div class="row mx-0 g-0 my-magic-hidden-to-mobile">
+            <div class="col-12 col-md-6 d-flex align-items-center gap-1 justify-content-around">
+                <div class="d-flex align-items-center gap-1">
+                    <i class="fa-solid fa-arrow-trend-up fs-4 positive-color"></i>
+                    <span class="positive-color impact-font fs-4 my-magic-hidden-top-worst">TOP TRENDING</span>
+                </div>
+                <ul class="d-flex flex-row align-items-center justify-content-center gap-2 company-list">
+                    <li class="mx-1">
+                        <i class="fa-brands fa-google fa-lg"></i>
+                        <span class="my-magic-hidden-trending-chart">Google</span>
+                        <i class="bi bi-arrow-up fs-6 positive-color"></i>
+                        <span class="positive-color">4K</span>
+                    </li>
+                    <li class="mx-1">
+                        <i class="fa-brands fa-amazon fa-lg"></i>
+                        <span class="my-magic-hidden-trending-chart">Amazon</span>
+                        <i class="bi bi-arrow-up fs-6 positive-color"></i>
+                        <span class="positive-color">3.5K</span>
+                    </li>
+                    <li class="mx-1">
+                        <i class="fa-brands fa-apple fa-lg"></i>
+                        <span class="my-magic-hidden-trending-chart">Apple</span>
+                        <i class="bi bi-arrow-up fs-6 positive-color"></i>
+                        <span class="positive-color">2.8K</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 d-flex align-items-center gap-1 justify-content-around">
+                <div class="d-flex align-items-center gap-1">
+                    <i class="fa-solid fa-arrow-trend-down fs-4 negative-color"></i>
+                    <span class="negative-color impact-font fs-4 my-magic-hidden-top-worst">WORST TRENDING</span>
+                </div>
+                <ul class="d-flex flex-row align-items-center justify-content-around gap-2 company-list">
+                    <li class="mx-1">
+                        <i class="fa-brands fa-microsoft fa-lg"></i>
+                        <span class="my-magic-hidden-trending-chart">Microsoft</span>
+                        <i class="bi bi-arrow-down fs-6 negative-color"></i>
+                        <span class="negative-color">-3.6K</span>
+                    </li>
+                    <li class="mx-1">
+                        <i class="fa-brands fa-meta fa-lg"></i>
+                        <span class="my-magic-hidden-trending-chart">Meta</span>
+                        <i class="bi bi-arrow-down fs-6 negative-color"></i>
+                        <span class="negative-color">-0.8K</span>
+                    </li>
+                    <li class="mx-1">
+                        <i class="fa-brands fa-linkedin-in fa-lg"></i>
+                        <span class="my-magic-hidden-trending-chart">LinkedIn</span>
+                        <i class="bi bi-arrow-down fs-6 negative-color"></i>
+                        <span class="negative-color">-0.5K</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="carouselExampleInterval" class="carousel slide my-magic-hidden-to-desktop my-2"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <div class="col-12 col-md-6 d-flex align-items-center gap-1 justify-content-center">
+                        <div class="d-flex align-items-center gap-1">
+                            <i class="fa-solid fa-arrow-trend-up fs-4 positive-color"></i>
+                        </div>
+                        <ul class="d-flex flex-row align-items-center justify-content-center company-list">
+                            <li class="mx-1">
+                                <i class="fa-brands fa-google fa-lg"></i>
+                                <i class="bi bi-arrow-up fs-6 positive-color"></i>
+                                <span class="positive-color">4K</span>
+                            </li>
+                            <li class="mx-1">
+                                <i class="fa-brands fa-amazon fa-lg"></i>
+                                <i class="bi bi-arrow-up fs-6 positive-color"></i>
+                                <span class="positive-color">3.5K</span>
+                            </li>
+                            <li class="mx-1">
+                                <i class="fa-brands fa-apple fa-lg"></i>
+                                <i class="bi bi-arrow-up fs-6 positive-color"></i>
+                                <span class="positive-color">2.8K</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="col-12 col-md-6 d-flex align-items-center gap-1 justify-content-center">
+                        <div class="d-flex align-items-center gap-1">
+                            <i class="fa-solid fa-arrow-trend-down fs-4 negative-color"></i>
+                        </div>
+                        <ul class="d-flex flex-row align-items-center justify-content-center company-list">
+                            <li class="mx-1">
+                                <i class="fa-brands fa-microsoft fa-lg"></i>
+                                <i class="bi bi-arrow-down fs-6 negative-color"></i>
+                                <span class="negative-color">-3.6K</span>
+                            </li>
+                            <li class="mx-1">
+                                <i class="fa-brands fa-meta fa-lg"></i>
+                                <i class="bi bi-arrow-down fs-6 negative-color"></i>
+                                <span class="negative-color">-0.8K</span>
+                            </li>
+                            <li class="mx-1">
+                                <i class="fa-brands fa-linkedin-in fa-lg"></i>
+                                <i class="bi bi-arrow-down fs-6 negative-color"></i>
+                                <span class="negative-color">-0.5K</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+
+
+
+    <div class="container">
+        <main>
+            <div class="d-flex justify-content-center align-items-center flex-wrap">
+                <span class="impact-font fw-bold ranked-color my-pro-title lh-1 text-nowrap mx-2">RANK. </span>
+                <span class="impact-font fw-bold my-pro-title lh-1 text-nowrap mx-2">LIKE A </span>
+                <span class="impact-font fw-bold ranked-color my-pro-title lh-1 text-nowrap mx-2">PRO.</span>
+            </div>
+
+            <div class="row gx-5 m-1 mt-5 m-md-5 gap-4 gap-md-0">
+                <div class="col-12 col-md-6 order-2 order-md-1">
+                    <div class="grey-border lh-1 rounded-3 p-3 h-100 d-flex flex-column justify-content-between">
+
+                        <div>
+                            <div class="d-flex flex-row justify-content-between align-items-center mb-3 flex-wrap">
+                                <span class="my-title ranked-color fs-2 p-0">Ranked.</span>
+                                <span class="impact-font grey-color fs-2 p-0">Basic</span>
+                            </div>
+
+                            <div class="mb-4">
+                                <p class="plan-price">FREE</p>
+                                <p class="plan-description">If you just want to rank.</p>
+                            </div>
+
+                            <div>
+                                <ul>
+                                    <li class="mb-3 d-flex flex-row align-items-start plan-feature"><i
+                                            class="bi bi-check-circle mx-3 ranked-color"></i>Basic features
+                                    </li>
+                                    <li class="mb-3 d-flex flex-row align-items-start plan-feature"><i
+                                            class="bi bi-check-circle mx-3 ranked-color"></i>View basic Analytics
+                                    </li>
+                                    <li class="mb-3 d-flex flex-row align-items-start plan-feature grey-color"><i
+                                            class="bi bi-dash-circle mx-3"></i>Ads Included</li>
+                                    <li class="mb-3 d-flex flex-row align-items-start plan-feature grey-color"><i
+                                            class="bi bi-dash-circle mx-3"></i>No AI Included
+                                    </li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-row justify-content-center mt-5">
+                            <button type="button" class="btn my-unsubscribed-button" disabled>Your current plan</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 order-1 order-md-2">
+                    <div class="ranked-border-pro lh-1 rounded-3 p-3 h-100 shadow-lg">
+
+                        <div class="d-flex flex-row justify-content-between align-items-center mb-3 flex-wrap">
+                            <span class="my-title ranked-color fs-2 p-0">Ranked.</span>
+                            <div class="d-flex flex-row align-items-center impact-font fs-2 p-0 ranked-color">
+                                <i class="bi bi-fire"></i>
+                                <span>PRO</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <p class="plan-price">9.99€/<span class="fs-5">month</span></p>
+                            <p class="plan-description">Everything included in Basic plus...</p>
+                        </div>
+
+                        <div>
+                            <ul>
+                                <li class="mb-3 d-flex flex-row align-items-start plan-feature">
+                                    <i class="bi bi-check-circle mx-3 ranked-color"></i>
+                                    <span class="ranked-color">No Ads</span>
+                                </li>
+                                <li class="mb-3 d-flex flex-row align-items-start plan-feature">
+                                    <i class="bi bi-check-circle mx-3 ranked-color"></i>
+                                    <span class="ranked-color">AI-powered insights</span>
+                                </li>
+                                <li class="mb-3 d-flex flex-row align-items-start plan-feature">
+                                    <i class="bi bi-check-circle mx-3 ranked-color"></i>
+                                    <span class="ranked-color">AI-enhanced company match</span>
+                                </li>
+                                <li class="mb-3 d-flex flex-row align-items-start plan-feature">
+                                    <i class="bi bi-check-circle mx-3 ranked-color"></i>
+                                    <span class="ranked-color">Exclusive <i class="bi bi-fire"></i><span
+                                            class="fw-bold">PRO</span> badge</span>
+                                </li>
+                                <li class="mb-3 d-flex flex-row align-items-start plan-feature">
+                                    <i class="bi bi-check-circle mx-3 ranked-color"></i>
+                                    <span class="ranked-color">Advanced charts</span>
+                                </li>
+                            </ul>
+
+                            <div class="d-flex flex-row justify-content-center mt-5">
+                                <button type="button" class="btn my-subscribe-button">Subscribe Now.</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside class="m-1 mt-5 m-md-5 px-5">
+            <section class="row d-flex align-items-center gap-3 gap-md-0 mb-5">
+                <div
+                    class="col-12 col-md-6 d-flex flex-row justify-content-center justify-content-md-end align-items-center px-md-5">
+                    <h2 class="copy-font">
+                        <span class="ranked-color">TURN OFF</span> BORING <span class="ranked-color">ADS</span>
+                    </h2>
+                </div>
+                <div
+                    class="col-12 col-md-6 d-flex flex-row justify-content-center justify-content-md-start align-items-center px-md-5">
+                    <div class="d-flex align-items-center gap-3 ads-switch fs-1 rounded-5 p-2 shadow-lg">
+                        <div class="ads-switch-ball"></div>
+                        <span class="white">ADS</span>
+                    </div>
+                </div>
+            </section>
+            <section class="row d-flex align-items-center gap-3 gap-md-0 mb-5">
+                <div
+                    class="col-12 col-md-6 order-2 order-md-1 d-flex flex-row justify-content-center justify-content-md-end align-items-center px-md-5">
+                    <div
+                        class="card-body text-center p-3 d-flex flex-column rounded-3 ranked-border shadow-lg bg-light">
+
+                        <header class="d-flex flex-row justify-content-between align-items-center mb-4 flex-wrap gap-2">
+
+                            <div class="d-flex flex-row align-items-center pt-1 m-0">
+                                <i class="bi bi-stars ranked-color fs-3 p-0"></i>
+                                <h2 class="impact-font ranked-color fs-2 p-0 m-0 text-nowrap">AI OVERVIEW</h2>
+                            </div>
+
+                            <div class="d-flex flex-row align-items-center pt-1">
+                                <i class="bi bi-fire ranked-color fs-3"></i>
+                                <span class="ranked-color my-magic-hidden-to-mobile fs-3 fw-bold">PRO</span>
+                            </div>
+
+                        </header>
+
+                        <div class="d-flex flex-column gap-2 justify-content-start align-items-start">
+                            <p class="impact-font ranked-color fs-4 lh-1 mb-3">
+                                Lots of Employees at this company thinks that...
+                            </p>
+
+                            <ul>
+                                <li class="mb-3 d-flex flex-row align-items-start plan-feature positive-color">
+                                    <i class="bi bi-check-circle mx-3"></i>
+                                    <span>Inclusivity is respected</span>
+                                </li>
+                                <li class="mb-3 d-flex flex-row align-items-start plan-feature positive-color">
+                                    <i class="bi bi-check-circle mx-3"></i>
+                                    <span>General climate is positive</span>
+                                </li>
+                                <li class="mb-3 d-flex flex-row align-items-start plan-feature positive-color">
+                                    <i class="bi bi-check-circle mx-3"></i>
+                                    <span>The food included is fine</span>
+                                </li>
+                                <li class="mb-3 d-flex flex-row align-items-start plan-feature negative-color">
+                                    <i class="bi bi-x-circle mx-3"></i>
+                                    <span>They should pay more</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="d-flex flex-row align-items-center m-0">
+                            <h2 class="impact-font ranked-color fs-2 p-0 m-0 text-nowrap">AVG RAL: <span class="positive-color fw-bold">$85,000</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-12 col-md-6 order-1 order-md-2 d-flex flex-row justify-content-center justify-content-md-start align-items-center px-md-5">
+
+                    <h2 class="copy-font">
+                        MAKE <span class="ranked-color">AI </span>DO <span class="ranked-color">BORING
+                        </span>ANALYTICS
+                    </h2>
+                </div>
+            </section>
+            <section class="row d-flex align-items-center gap-3 gap-md-0 mb-5">
+                <div
+                    class="col-12 col-md-6 d-flex flex-row justify-content-center justify-content-md-end align-items-center px-md-5">
+                    <h2 class="copy-font">
+                        <span><span class="ranked-color">LOVE</span> IS <span class="ranked-color">BLIND</span>,</span>
+                        <br>
+                        <span><span class="ranked-title ranked-color">RANKED. NOT</span>.</span>
+                    </h2>
+                </div>
+                <div
+                    class="col-12 col-md-6 d-flex flex-row justify-content-center justify-content-md-start align-items-center px-md-5">
+                    <div class="border border-3 border-dark rounded-5 bg-light shadow-lg p-3 w-100">
+                        <div class="d-flex align-items-start gap-3">
+
+                            <div
+                                class="notification-icon d-flex align-items-center justify-content-center flex-shrink-0">
+                                <i class="bi bi-heart-fill ranked-color fs-4"></i>
+                            </div>
+
+                            <div>
+                                <p class="my-title ranked-color fs-4 mb-1">Ranked.</p>
+
+                                <p class="fw-bold positive-color mb-2">It's a match! Spotify is your
+                                    company-soulmate!</p>
+
+                                <p class="impact-font d-flex justify-content-end fs-5 mb-0">2 min ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="row d-flex align-items-center gap-3 gap-md-0 mb-5">
+                <div
+                    class="col-12 col-md-6 order-1 order-md-2 d-flex flex-row justify-content-center justify-content-md-start align-items-center px-md-5">
+                    <h2 class="copy-font">
+                        LET <span class="ranked-color">PREJUDICES BURN</span> AWAY WITH <span class="ranked-color">YOUR
+                            EXCLUSIVE</span> BADGE
+                    </h2>
+                </div>
+                <div
+                    class="col-12 col-md-6 order-2 order-md-1 d-flex flex-row justify-content-center justify-content-md-end align-items-center px-md-5">
+                    <div
+                        class="d-flex align-items-center gap-lg-0 gap-2 ranked-border rounded-3 p-3 shadow-lg bg-light flex-wrap">
+                        <div>
+                            <img src="img/ProfilePhoto2.png" class="my-post-profile-photo" alt="Profile Photo">
+                        </div>
+                        <div class="ps-2 pe-2 d-flex flex-column align-items-start">
+                            <div class="d-flex flex-row align-items-center gap-2">
+                                <h2 class="p-0 m-0 ranked-color h5">Dwane Johnson</h2>
+                                <div class="d-flex flex-row align-items-center">
+                                    <i class="bi bi-fire ranked-color fs-5"></i>
+                                    <span class="ranked-color my-magic-hidden-to-mobile fw-bold">PRO</span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row align-items-center flex-nowrap gap-1">
+                                <p class="p-0 m-0 h6 text-body-secondary text-nowrap">Dev-Ops Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="row d-flex align-items-center gap-3 gap-md-0 mb-5">
+                <div
+                    class="col-12 col-md-6 d-flex flex-row justify-content-center justify-content-md-end align-items-center px-md-5">
+                    <h2 class="copy-font">
+                        <span class="ranked-color">TRUST</span> STATISTICS NOT<span class="ranked-color">
+                            SENTIMENTS</span>
+                    </h2>
+                </div>
+                <div
+                    class="col-12 col-md-6 d-flex flex-row justify-content-center justify-content-md-start align-items-center px-md-5">
+                    <div class="border border-3 border-dark bg-light p-3 shadow-lg w-100">
+                        <h3 class="impact-font text-center fs-4 mb-3">AMAZON-RANK</h3>
+
+                        <div class="rank-chart-area d-flex align-items-end justify-content-around">
+                            <div class="rank-bar rank-bar-80"></div>
+                            <div class="rank-bar rank-bar-55"></div>
+                            <div class="rank-bar rank-bar-40"></div>
+                            <div class="rank-bar rank-bar-90"></div>
+                            <div class="rank-bar rank-bar-85"></div>
+                            <div class="rank-bar rank-bar-88"></div>
+                            <div class="rank-bar rank-bar-75"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </aside>
+    </div>
+
+    <br>
+    <br>
+
+    <nav class="navbar shadow-lg fixed-bottom my-bottom-navbar container rounded-3 d-flex align-items-center px-2 py-1">
+        <div class="w-100 d-flex flex-row justify-content-around align-items-center p-0 m-0">
+            <a href="home.html"
+                class="d-flex flex-column align-items-center justify-content-center text-white text-decoration-none">
+                <i class="bi bi-house-door-fill"></i>
+                <span>Home</span>
+            </a>
+            <a href="post.html"
+                class="d-flex flex-column align-items-center justify-content-center text-white text-decoration-none">
+                <i class="bi bi-plus-square-fill"></i>
+                <span>Rank.</span>
+            </a>
+            <a href="Pro.html"
+                class="d-flex flex-column align-items-center justify-content-center text-white text-decoration-none">
+                <i class="bi bi-fire"></i>
+                <span>PRO</span>
+            </a>
+            <a href="profile.html"
+                class="d-flex flex-column align-items-center justify-content-center text-white text-decoration-none">
+                <i class="bi bi-person-fill"></i>
+                <span>Profile</span>
+            </a>
+        </div>
+    </nav>
+</body>
+
+</html>
